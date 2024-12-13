@@ -1,0 +1,9 @@
+
+created file .env and add mongodb MONGO_URL
+
+version: '3.8'
+services:
+  backend:
+    image: backend-image:latest
+    environment:
+      - MONGO_URL=${MONGO_URL}
